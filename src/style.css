@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -80,6 +82,17 @@ ul {
   gap: 16px;
   padding-top: 12px;
   padding-bottom: 12px;
+}
+
+footer {
+  width: 100%;
+  justify-content: center;
+  margin: auto;
+  margin-top: 10px;
+  flex-shrink: 0;
+  background-color: white;
+  bottom: 0;
+  border-style: solid;
 }
 
 @media screen and (max-width: 600px) {
