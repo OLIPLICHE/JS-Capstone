@@ -1,3 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
 body {
-  background-color: bisque;
+  background-color: skyblue;
+}
+
+/* Footer */
+
+footer {
+  font-weight: bold;
+  padding: 5px 10px;
+  border: 3px solid black;
+}
+
+footer span {
+  font-style: italic;
+  font-weight: 400;
 }
