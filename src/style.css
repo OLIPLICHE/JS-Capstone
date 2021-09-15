@@ -1,3 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
 body {
-  background-color: bisque;
+  padding: 0;
+  margin: 0;
+  background-color: #e5e5e5;
+}
+
+#header {
+  width: 100%;
+  background-color: #fff;
+}
+
+.logo {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  color: hsl(0, 0%, 11%);
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  align-items: center;
+  margin: 0 auto;
+  height: 4rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  line-height: 4rem;
+  height: 100%;
+}
+
+.d-navbar {
+  display: flex;
+  list-style-type: none;
+  height: 100%;
+}
+
+.d-navbar li {
+  margin-left: 1rem;
+}
+
+.d-navbar li a {
+  color: hsl(0, 0%, 3%);
+}
+
+.a-navbar {
+  text-decoration: none;
+  height: 2em;
+  padding: 0.5em 1em;
+}
+
+.navbar .humberger i {
+  font-size: 22px;
+  font-weight: 600;
+  color: hsl(0, 0%, 4%);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+footer {
+  width: 100%;
+  justify-content: center;
+  margin: auto;
+  margin-top: 10px;
+  flex-shrink: 0;
+  background-color: white;
+  bottom: 0;
+  border-style: solid;
+}
+
+@media screen and (max-width: 600px) {
+  .d-navbar {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .humberger {
+    display: none;
+  }
 }
