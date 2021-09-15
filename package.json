@@ -20,13 +20,16 @@
   },
   "homepage": "https://github.com/emmyobonyo/JS-Capstone#readme",
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.15.4",
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.2.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.24.2",
-    "hint": "^6.1.4",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.2",
+    "node-sass": "^6.0.1",
+    "sass-loader": "^12.1.0",
     "style-loader": "^3.2.1",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
@@ -37,6 +40,7 @@
     "webpack-dev-server": "^4.0.0"
   },
   "dependencies": {
+    "hint": "^6.1.4",
     "lodash": "^4.17.21"
   }
 }
