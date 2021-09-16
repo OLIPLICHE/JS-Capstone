@@ -6,7 +6,7 @@ const renderMeals = (mealsData) => {
   const { meals } = mealsData;
   console.log(meals);
 
-  meals.forEach((mealItem, id) => {
+  meals.forEach((mealItem) => {
     const li = document.createElement('li');
     li.className = 'meal-item';
 
@@ -51,7 +51,7 @@ const renderMeals = (mealsData) => {
       divInner.appendChild(image);
       divInner.appendChild(divDescription);
       divDescription.appendChild(name);
-    })
+    });
     commentBtn.className = 'btn';
     commentBtn.innerText = 'Comment';
     li.appendChild(commentBtn);

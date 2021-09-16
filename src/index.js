@@ -16,10 +16,10 @@ const displayMeals = () => {
 
 window.addEventListener('load', displayMeals);
 
-window.onclick = function(event) {
+window.onclick = (event) => {
   const modal = document.getElementById('modal');
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target === modal) {
+    modal.style.display = 'none';
     modal.id = 'none';
   }
-}
+};
