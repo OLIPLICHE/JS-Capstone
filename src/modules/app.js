@@ -1,10 +1,51 @@
-/* eslint-disable no-console */
+/* eslint-disable no-undef */
 /* eslint-disable linebreak-style */
+import involvement from './involvement';
+
 const ul = document.getElementById('meal-list');
-const renderMeals = (mealsData) => {
-  console.log(mealsData);
+const renderModal = (meal) => {
+  const modalInner = document.createElement('div');
+  modalInner.className = 'modal-inner';
+
+  const modalHeader = document.createElement('div');
+  modalHeader.className = 'modal-header';
+  modalInner.appendChild(modalHeader);
+
+  const closeBtn = document.createElement('button');
+  closeBtn.className = 'close-modal icn-btn';
+  closeBtn.innerHTML = '&times;';
+  closeBtn.addEventListener('click', () => {
+    commentModal.style.display = 'none';
+  });
+  modalHeader.appendChild(closeBtn);
+
+  const modalDetails = document.createElement('div');
+  modalDetails.className = 'modal-details';
+  modalInner.appendChild(modalDetails);
+
+  const modalImg = document.createElement('img');
+  modalImg.className = 'modal-img';
+  modalImg.src = meal.strMealThumb;
+  modalDetails.appendChild(modalImg);
+
+  const modalMeta = document.createElement('div');
+  modalMeta.className = 'modal-meta';
+  modalDetails.appendChild(modalMeta);
+
+  const modalTitle = document.createElement('h4');
+  modalTitle.className = 'modal-title';
+  modalTitle.innerText = meal.strMeal;
+  modalMeta.appendChild(modalTitle);
+
+  const modalDesc = document.createElement('p');
+  modalDesc.className = 'modal-desc';
+  modalDesc.innerText = meal.strInstructions;
+  modalMeta.appendChild(modalDesc);
+  commentModal.appendChild(modalInner);
+};
+
+const renderMeals = (mealsData, likesData) => {
   const { meals } = mealsData;
-  console.log(meals);
 
   meals.forEach((mealItem) => {
     const li = document.createElement('li');
@@ -12,40 +53,46 @@ const renderMeals = (mealsData) => {
 
     const img = document.createElement('img');
     img.src = mealItem.strMealThumb;
-
     img.className = 'meal-image';
     li.appendChild(img);
 
     const div = document.createElement('div');
     div.className = 'meal-meta';
-
     li.appendChild(div);
+
     const p = document.createElement('p');
     p.className = 'meal-title';
     p.innerText = mealItem.strMeal;
     div.appendChild(p);
 
+    const likeSection = document.createElement('div');
+    likeSection.className = 'like-section';
+    div.appendChild(likeSection);
     const likeBtn = document.createElement('button');
     likeBtn.className = 'icn-btn';
-    div.appendChild(likeBtn);
-
+    likeSection.appendChild(likeBtn);
     const likeIcon = document.createElement('i');
     likeIcon.className = 'far fa-heart';
     likeBtn.appendChild(likeIcon);
+    const likeCount = document.createElement('p');
+    likeCount.className = 'like-count';
+    likeCount.innerText = involvement.likes(likesData, mealItem.idMeal);
+    likeSection.appendChild(likeCount);
 
     const commentBtn = document.createElement('button');
     commentBtn.className = 'btn';
     commentBtn.innerText = 'Comment';
+    commentBtn.addEventListener('click', () => {
+      if (commentModal.hasChildNodes()) {
+        commentModal.innerHTML = '';
+      } else {
+        renderModal(mealItem);
+        commentModal.style.display = 'block';
+      }
+    });
     li.appendChild(commentBtn);
-
-    // const reserveBtn = document.createElement('button');
-    // reserveBtn.className = 'btn btn-alt';
-    // reserveBtn.innerText = 'Reserve';
-    // li.appendChild(reserveBtn);
     ul.appendChild(li);
   });
 };
 
-const renderModal = () => {};
-
-export { renderMeals, renderModal };
+export default renderMeals;
