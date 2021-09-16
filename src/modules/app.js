@@ -34,6 +34,24 @@ const renderMeals = (mealsData) => {
     likeBtn.appendChild(likeIcon);
 
     const commentBtn = document.createElement('button');
+    commentBtn.addEventListener('click', () => {
+      const div = document.createElement('div');
+      div.className = 'modal';
+      div.id = 'modal';
+      const divInner = document.createElement('div');
+      divInner.className = 'modal-content';
+      const image = document.createElement('IMG');
+      image.className = 'modal-image';
+      image.src = mealItem.strMealThumb;
+      const divDescription = document.createElement('div');
+      const name = document.createElement('h2');
+      name.innerHTML = mealItem.strMeal.toUpperCase();
+      ul.appendChild(div);
+      div.appendChild(divInner);
+      divInner.appendChild(image);
+      divInner.appendChild(divDescription);
+      divDescription.appendChild(name);
+    });
     commentBtn.className = 'btn';
     commentBtn.innerText = 'Comment';
     li.appendChild(commentBtn);
