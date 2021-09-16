@@ -6,6 +6,7 @@ module.exports = {
   entry: './src/index.js',
   devServer: {
     static: './dist',
+    port: 8081,
   },
   plugins: [
     new HtmlWebpackPlugin({
