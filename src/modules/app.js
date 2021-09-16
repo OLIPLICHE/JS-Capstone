@@ -6,7 +6,7 @@ const renderMeals = (mealsData) => {
   const { meals } = mealsData;
   console.log(meals);
 
-  meals.forEach((mealItem) => {
+  meals.forEach((mealItem, id) => {
     const li = document.createElement('li');
     li.className = 'meal-item';
 
@@ -37,10 +37,20 @@ const renderMeals = (mealsData) => {
     commentBtn.addEventListener('click', () => {
       const div = document.createElement('div');
       div.className = 'modal';
+      div.id = 'modal';
       const divInner = document.createElement('div');
-      divInner.className = 'modal-content'
-      ul.appendChild(div)
-      div.appendChild(divInner)
+      divInner.className = 'modal-content';
+      const image = document.createElement('IMG');
+      image.className = 'modal-image';
+      image.src = mealItem.strMealThumb;
+      const divDescription = document.createElement('div');
+      const name = document.createElement('h2');
+      name.innerHTML = mealItem.strMeal.toUpperCase();
+      ul.appendChild(div);
+      div.appendChild(divInner);
+      divInner.appendChild(image);
+      divInner.appendChild(divDescription);
+      divDescription.appendChild(name);
     })
     commentBtn.className = 'btn';
     commentBtn.innerText = 'Comment';

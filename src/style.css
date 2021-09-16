@@ -168,6 +168,12 @@ footer {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-image {
+  width: 50%;
 }
 
 @media screen and (max-width: 600px) {
