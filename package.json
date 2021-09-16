@@ -4,7 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "webpack serve --open",
     "build": "webpack"
   },
@@ -28,8 +28,7 @@
     "eslint-plugin-import": "^2.24.2",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.2",
-    "node-sass": "^6.0.1",
-    "sass-loader": "^12.1.0",
+    "jest": "^27.2.0",
     "style-loader": "^3.2.1",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
@@ -40,7 +39,4 @@
     "webpack-dev-server": "^4.0.0"
   },
   "dependencies": {
-    "hint": "^6.1.4",
-    "lodash": "^4.17.21"
-  }
-}
+    "axios": "^0.21.4",
