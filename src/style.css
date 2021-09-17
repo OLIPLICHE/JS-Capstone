@@ -146,6 +146,7 @@ ul {
   background-color: #0000ff0d;
   font-size: 22px;
   transition: ease color 2s;
+  cursor: pointer;
 }
 
 .btn-alt {
