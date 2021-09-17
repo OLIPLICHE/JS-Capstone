@@ -28,6 +28,14 @@ body {
   color: hsl(0, 0%, 11%);
 }
 
+.logo img {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  z-index: 3;
+  cursor: pointer;
+}
+
 .logo a {
   text-decoration: none;
 }
