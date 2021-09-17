@@ -35,7 +35,7 @@ body {
 .header-container {
   display: flex;
   justify-content: space-between;
-  width: 90%;
+  width: 79%;
   align-items: center;
   margin: 0 auto;
   height: 4rem;
@@ -45,13 +45,14 @@ body {
   display: flex;
   align-items: center;
   line-height: 4rem;
-  height: 100%;
+  width: 37%;
 }
 
 .d-navbar {
   display: flex;
   list-style-type: none;
-  height: 100%;
+  flex-direction: row;
+  width: 100%;
 }
 
 .d-navbar li {
@@ -75,7 +76,9 @@ body {
 }
 
 .container {
-  padding: 2em 20em;
+  padding: 4em 0;
+  justify-content: center;
+  display: flex;
 }
 
 ul {
@@ -83,6 +86,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 80%;
 }
 
 .dflex {
@@ -94,10 +98,11 @@ ul {
   background-color: white;
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 32%;
   padding: 7px;
   margin: 1em 0;
-  box-shadow: rgba(100, 100, 111, 0.2) 0 2px 20px 0;
+  box-shadow: 0 10px 15px rgb(0 0 0 / 77%);
+  transition: 300ms ease-in-out;
 }
 
 .meal-image {
