@@ -1,6 +1,6 @@
 # RestaurantApp
 
-> This website App displays meals information from Sea food. It also allows users to submit their comments and likes for their favorite dish. All data is preserved thanks to the external MealsDB API, and involvement API
+> This website App displays meals information from Sea food. It also allows users to submit their comments and likes for their favorite dish. All data is preserved, thanks to the external MealsDB API, and involvement API
 
 ![Desktop-Images](./images/restoApp.png)
 ## Built With
