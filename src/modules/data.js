@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 const API = {
   getMeals: async (endpoint) => {
     const res = await fetch(`${endpoint}`, { method: 'GET' });

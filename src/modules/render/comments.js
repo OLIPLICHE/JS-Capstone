@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 import API from '../data';
 import counter from '../counter';
 
