@@ -198,11 +198,12 @@ footer {
 }
 
 .modal-meta {
-  padding-left: 38rem;
-  padding-top: 12rem;
+  padding-left: 39rem;
+  padding-top: 7rem;
   position: absolute;
   display: flex;
   flex-direction: column;
+  width: 77%;
 }
 
 .comment-form input {
@@ -243,6 +244,13 @@ footer {
   .d-navbar {
     display: none;
   }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
 }
 
 @media screen and (min-width: 600px) {
