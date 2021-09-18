@@ -3,7 +3,6 @@ import './style.css';
 import API from './modules/data';
 import counter from './modules/counter';
 import render from './modules/render/app';
-// import renderMeals from './modules/app';
 
 const mealCounter = document.getElementById('meal-counter');
 
