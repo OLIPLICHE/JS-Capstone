@@ -1,65 +1,66 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# RestaurantApp
 
-# Project Name
+> This website App displays meals information from Sea food. It also allows users to submit their comments and likes for their favorite dish. All data is preserved thanks to the external MealsDB API, and involvement API
 
-> One paragraph statement about the project.
-
-![screenshot](./app_screenshot.png)
-
-Additional description about the project and its features.
-
+![Desktop-Images](./images/restoApp.png)
 ## Built With
+- Javascript
+- Html
+- Css
+- Jest
+- Webpack
+- Fontawesome CDN
 
-- Major languages
-- Frameworks
-- Technologies used
+## Live demo
+[LiveLink](https://olipliche.github.io/JS-Capstone/dist/)
 
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
-
+### Video demo
+[VideoLink](https://www.loom.com/share/47d74ed9c139450bbdba457a1cbf00d0)
 
 ## Getting Started
+To get a local copy of this project, follow these simple steps:
+- Clone this clone this repo by typing: `git clone https://github.com/emmyobonyo/JS-Capstone.git`.git`, on your local terminal
+- Run `cd <name of the folder>` to access the project folder
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+## To make the project run in your local machine
+- You will need to set up or install webpack in your machine. Open the link bellow for set up
+- `https://webpack.js.org/guides/getting-started/#basic-setup`
 
+## Installation of Packages.Json
+ Run the code bellow inside your terminal to install Packages.Json in your local machine.
+- npm install --save-dev stylelint stylelint-config-standard
+- {
+  "extends": "stylelint-config-standard"
+}
+- npx stylelint "**/*.css"
 
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+- Text editor
+- Git
+- Html
+- CSS
+- Js
+- webpack
 
 ## Authors
 
-👤 **Author1**
+👤 **Olipliche Mavoungou Paka**  
+- GitHub: [@OLIPLICHE](https://github.com/OLIPLICHE)
+- Twitter: [@olipliche1](https://twitter.com/paka)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/olipliche-paka-mavoungou/)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **Emmanuel Obonyo**
+- GitHub: [@emmyobonyo](https://github.com/emmyobonyo)
+- Twitter: [@emmyobonyo](https://twitter.com/emmyobonyo)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/emmanuel-obonyo-3728a2200/)
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!
+Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page]().
 
 ## Show your support
 

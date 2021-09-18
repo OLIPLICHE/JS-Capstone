@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #3635bd2e;
+}
+
+#header {
+  width: 100%;
+  background-color: #abacb8;
+}
+
+.logo {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  color: hsl(0, 0%, 11%);
+}
+
+.logo a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: fantasy;
+  color: #09fbff;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  width: 79%;
+  align-items: center;
+  margin: 0 auto;
+  height: 4rem;
+}
+
+.logo img {
+  width: 50px;
+  padding-top: 10px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  line-height: 4rem;
+  width: 37%;
+}
+
+.d-navbar {
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  width: 100%;
+}
+
+.d-navbar li {
+  margin-left: 1rem;
+}
+
+.d-navbar li a {
+  color: hsl(0, 0%, 3%);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.a-navbar {
+  text-decoration: none;
+  height: 2em;
+  padding: 0.5em 1em;
+}
+
+.navbar .humberger i {
+  font-size: 22px;
+  font-weight: 600;
+  color: hsl(0, 0%, 4%);
+}
+
+.container {
+  padding: 4em 0;
+  justify-content: center;
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.dflex {
+  display: flex;
+}
+
+.meal-item {
+  border-radius: 0.5em;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+  padding: 7px;
+  margin: 1em 0;
+  box-shadow: 0 10px 15px rgb(0 0 0 / 77%);
+  transition: 300ms ease-in-out;
+}
+
+.meal-image {
+  width: 100%;
+  margin-bottom: 1em;
+  border-radius: 0.5em;
+}
+
+.meal-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.icn-btn {
+  background: transparent;
+  border: none;
+  color: var(--secondary-color);
+  padding: 12px 16px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 0.5em;
+  border-radius: 0.5em;
+  border: 1px solid #6070ff;
+  background: var(--primary-color);
+  color: var(--background-color);
+  background-color: #0000ff0d;
+  font-size: 22px;
+  transition: ease color 2s;
+  cursor: pointer;
+}
+
+.btn-alt {
+  margin-top: 1em;
+  color: var(--background-color);
+  background: var(--secondary-color);
+}
+
+footer {
+  width: 100%;
+  justify-content: center;
+  margin: auto;
+  margin-top: 10px;
+  flex-shrink: 0;
+  background-color: #abacb8;
+  bottom: 0;
+  border-style: solid;
+  font-size: 21px;
+  text-align: center;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: rgb(170 176 177 / 72%);
+  backdrop-filter: blur(57px);
+  overflow: scroll;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-details img {
+  position: absolute;
+  padding-top: 3rem;
+  width: 34%;
+  margin-left: 27rem;
+}
+
+.modal-meta {
+  padding-left: 27rem;
+  padding-top: 33rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 67%;
+}
+
+.comment-form input {
+  height: 3rem;
+}
+
+.all-comments {
+  justify-content: center;
+  display: flex;
+  padding-top: 25px;
+  flex-direction: column;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 43px;
+}
+
+.comment-meta {
+  padding-right: 10px;
+}
+
+.comment-li {
+  display: flex;
+  flex-direction: row;
+  padding-top: 13px;
+  gap: 35px;
+}
+
+.close-modal {
+  padding-left: 78rem;
+  padding-top: 19px;
+  position: absolute;
+  font-size: 3rem;
+}
+
+form .btn-alt {
+  border: black;
+  border-style: solid;
+  border-radius: inherit;
+}
+
+@media screen and (max-width: 600px) {
+  .d-navbar {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .humberger {
+    display: none;
+  }
+}
