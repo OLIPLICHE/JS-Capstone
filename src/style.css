@@ -175,8 +175,8 @@ footer {
   left: 0;
   height: 100vh;
   width: 100%;
-  background: rgba(178, 188, 189, 0.4);
-  backdrop-filter: blur(15px);
+  background: rgb(170 176 177 / 72%);
+  backdrop-filter: blur(57px);
   overflow: scroll;
 }
 
@@ -192,18 +192,18 @@ footer {
 
 .modal-details img {
   position: absolute;
-  padding-left: 2rem;
-  padding-top: 4rem;
-  width: 41%;
+  padding-top: 3rem;
+  width: 34%;
+  margin-left: 27rem;
 }
 
 .modal-meta {
-  padding-left: 39rem;
-  padding-top: 7rem;
+  padding-left: 27rem;
+  padding-top: 33rem;
   position: absolute;
   display: flex;
   flex-direction: column;
-  width: 77%;
+  width: 67%;
 }
 
 .comment-form input {
@@ -231,6 +231,7 @@ footer {
   display: flex;
   flex-direction: row;
   padding-top: 13px;
+  gap: 35px;
 }
 
 .close-modal {
@@ -238,6 +239,12 @@ footer {
   padding-top: 19px;
   position: absolute;
   font-size: 3rem;
+}
+
+form .btn-alt {
+  border: black;
+  border-style: solid;
+  border-radius: inherit;
 }
 
 @media screen and (max-width: 600px) {
