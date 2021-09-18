@@ -12,14 +12,14 @@
 - Fontawesome CDN
 
 ## Live demo
-[LiveLink]()
+[LiveLink](https://olipliche.github.io/JS-Capstone/dist/)
 
 ### Video demo
-[VideoLink]()
+[VideoLink](https://www.loom.com/share/47d74ed9c139450bbdba457a1cbf00d0)
 
 ## Getting Started
 To get a local copy of this project, follow these simple steps:
-- Clone this clone this repo by typing: `git clone https://github.com/emmyobonyo/JS-Capstone.git`.git`, on your local terminal
+- Clone this clone this repo by typing: `git clone https://github.com/OLIPLICHE/JS-Capstone.git`.git`, on your local terminal
 - Run `cd <name of the folder>` to access the project folder
 
 ## To make the project run in your local machine
