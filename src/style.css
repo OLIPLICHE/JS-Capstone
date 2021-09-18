@@ -168,8 +168,6 @@ footer {
   text-align: center;
 }
 
-/* Modal */
-
 .modal {
   display: none;
   position: fixed;
@@ -192,8 +190,53 @@ footer {
   justify-content: space-between;
 }
 
-.modal-image {
-  width: 50%;
+.modal-details img {
+  position: absolute;
+  padding-left: 2rem;
+  padding-top: 4rem;
+  width: 41%;
+}
+
+.modal-meta {
+  padding-left: 38rem;
+  padding-top: 12rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-form input {
+  height: 3rem;
+}
+
+.all-comments {
+  justify-content: center;
+  display: flex;
+  padding-top: 25px;
+  flex-direction: column;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 43px;
+}
+
+.comment-meta {
+  padding-right: 10px;
+}
+
+.comment-li {
+  display: flex;
+  flex-direction: row;
+  padding-top: 13px;
+}
+
+.close-modal {
+  padding-left: 78rem;
+  padding-top: 19px;
+  position: absolute;
+  font-size: 3rem;
 }
 
 @media screen and (max-width: 600px) {
