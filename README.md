@@ -17,7 +17,6 @@
 ### Video demo
 [VideoLink]()
 
-
 ## Getting Started
 To get a local copy of this project, follow these simple steps:
 - Clone this clone this repo by typing: `git clone https://github.com/emmyobonyo/JS-Capstone.git`.git`, on your local terminal
@@ -47,17 +46,15 @@ To get a local copy of this project, follow these simple steps:
 ## Authors
 
 👤 **Olipliche Mavoungou Paka**  
-
 - GitHub: [@OLIPLICHE](https://github.com/OLIPLICHE)
 - Twitter: [@olipliche1](https://twitter.com/paka)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/olipliche-paka-mavoungou/)
 
 
-👤 ****
-
-- GitHub: [@]()
-- Twitter: [@]()
-- LinkedIn: [LinkedIn]()
+👤 **Emmanuel Obonyo**
+- GitHub: [@emmyobonyo](https://github.com/emmyobonyo)
+- Twitter: [@emmyobonyo](https://twitter.com/emmyobonyo)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/emmanuel-obonyo-3728a2200/)
 
 ## 🤝 Contributing
 
