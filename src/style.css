@@ -255,7 +255,6 @@ form .btn-alt {
   .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
   }
 }
 
